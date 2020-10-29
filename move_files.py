@@ -9,7 +9,7 @@ destinationMasterFolderID = '1kKHAC2HmlcgNdh2P94JQClhdCZ3spMsM' #Change this to 
 source_folders = g.listFilesInFolder(sourceMasterFolderID)['files']
 print('There are {} folders at the source end'.format(len(source_folders)))
 
-dest_folders = g.listFilesInFolder(destinationMasterFolderID, trashed=False)['files']
+dest_folders = g.listFilesInFolder(destinationMasterFolderID)['files']
 print('There are {} folders at the destination end'.format(len(dest_folders)))
 dest_foldernames = [f['name'] for f in dest_folders]
 
